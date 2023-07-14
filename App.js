@@ -1,13 +1,17 @@
-import {View} from 'react-native';
+import * as React from 'react';
+import { View } from 'react-native';
 import LittleLemonHeader from './components/LittleLemonHeader';
-import Footer from './components/Footer';
+import MenuItems from './components/MenuItems';
 
 export default function App() {
   return (
-    <View style ={{flex : 1, justifyContent: 'flex-start', padding : 45 }}>
-      <LittleLemonHeader />
-      <Footer />
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: '#495E57',
+      }}>
+      
+      <MenuItems />
     </View>
   );
 }
-
